@@ -52,14 +52,10 @@ class RAGAssistant:
         self._relevance = None
 
         self.system_prompt = (
-            "Esti un asistent specializat in analiza si interpretarea sesiunilor "
-            "dispozitivelor avansate de biofeedback. "
-            "Raspunzi doar la intrebari relevante despre semnale fiziologice "
-            "(HRV, EEG, GSR, temperatura corporala, respiratie), stari psihologice "
-            "si antrenament mental, pe baza contextului extras din sursele furnizate. "
+            "Esti un asistent specializat in analiza si interpretarea sesiunilor dispozitivelor avansate de biofeedback. "
+            "Raspunzi doar la intrebari relevante despre semnale fiziologice (HRV, EEG, GSR, temperatura corporala, respiratie), stari psihologice si antrenament mental, pe baza contextului extras din sursele furnizate. "
             "Ofera raspunsuri clare, concise si bine structurate. "
-            "Daca informatia lipseste din context, spune explicit acest lucru si nu "
-            "inventa detalii. "
+            "Daca informatia lipseste din context, spune explicit acest lucru si nu inventa detalii. "
             "Cand este util, foloseste bullet points sau pasi numerotati. "
             "Pastreaza raspunsul in limba romana."
         )
@@ -68,9 +64,7 @@ class RAGAssistant:
     def relevance(self):
         if self._relevance is None:
             self._relevance = self._embed_texts(
-                "Aceasta este o intrebare relevanta despre analiza si interpretarea "
-                "sesiunilor, dispozitivelor de biofeedback, inclusiv semnale "
-                "fiziologice, HRV, coerenta cardiaca, undele cerebrale EEG, raspuns "
+                "Aceasta este o intrebare relevanta despre analiza si interpretarea sesiunilor, dispozitivelor de biofeedback, inclusiv semnale fiziologice, HRV, coerenta cardiaca, undele cerebrale EEG, raspuns "
                 "galvanic al pielii, stres, relaxare si antrenament mental.",
             )[0]
         return self._relevance
