@@ -2,7 +2,7 @@
 
 # Tema 2 - Construiți un asistent care să răspundă la informații relevante doar pentru ideea dumneavoastră.
 
-# ## Cerinte
+# Cerinte
 
 - Fork din github la repository-ul [https://github.com/dragosbajenaru1001/Teme\\_pentru\\_acasa](https://github.com/dragosbajenaru1001/Teme_pentru_acasa)
 - Rezolvați cerințele To-Do din fisierul
@@ -11,13 +11,13 @@
 
 ---
 
-## ## Instructiuni
+## Instructiuni
 
-- ### ### 1. Instalati Python 3.10.11 (o singura data)
+- ### 1. Instalati Python 3.10.11 (o singura data)
 
 <https://www.python.org/downloads/release/python-31011/>
 
-- ### ### 2. Creati si activati virtualenv
+- ### 2. Creati si activati virtualenv
 
 ```
 ```powershell  
